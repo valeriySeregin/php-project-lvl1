@@ -1,0 +1,11 @@
+{
+    "name": "hexlet/code",
+    "description": "hexlet learning project",
+    "authors": [
+        {
+            "name": "Valeriy Seregin",
+            "email": "valera-s-38@mail.ru"
+        }
+    ],
+    "require": {}
+}
