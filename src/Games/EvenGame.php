@@ -6,7 +6,10 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'Answer \'yes\' if given number is even and \'no\' otherwise';
 
-function start(): ?callable
+/**
+ * @return void|callable|null
+ */
+function start()
 {
     return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }

@@ -6,7 +6,10 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'What is the result of the expression?';
 
-function start(): ?callable
+/**
+ * @return void|callable|null
+ */
+function start()
 {
     return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
