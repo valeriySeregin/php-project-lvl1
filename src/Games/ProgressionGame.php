@@ -7,12 +7,9 @@ use function BrainGames\Engine\startGame;
 const PROGRESSION_LENGTH = 10;
 const GAME_RULE = 'What number is missing in the progression?';
 
-/**
- * @return void|callable|null
- */
-function start()
+function start(): void
 {
-    return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
+    startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
 
 function generateQuestionAndAnswer(): array

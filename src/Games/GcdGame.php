@@ -6,12 +6,9 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'Find the greatest common divisor of given numbers';
 
-/**
- * @return void|callable|null
- */
-function start()
+function start(): void
 {
-    return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
+    startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
 
 function calculateGcd(int $firstNum, int $secondNum): int

@@ -6,12 +6,9 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'Answer \'yes\' if given number is prime. Otherwise answer \'no\'';
 
-/**
- * @return void|callable|null
- */
-function start()
+function start(): void
 {
-    return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
+    startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
 
 function isPrime(int $num): bool

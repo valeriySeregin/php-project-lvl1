@@ -6,12 +6,9 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'What is the result of the expression?';
 
-/**
- * @return void|callable|null
- */
-function start()
+function start(): void
 {
-    return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
+    startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
 
 function getRandomOperator(): string
