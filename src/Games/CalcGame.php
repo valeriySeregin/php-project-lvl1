@@ -4,7 +4,7 @@ namespace BrainGames\Games\CalcGame;
 
 use function BrainGames\Engine\startGame;
 
-const GAME_RULE = 'What is the result of the expression?' . PHP_EOL;
+const GAME_RULE = 'What is the result of the expression?';
 
 function start(): ?callable
 {

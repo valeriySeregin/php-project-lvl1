@@ -5,7 +5,7 @@ namespace BrainGames\Games\ProgressionGame;
 use function BrainGames\Engine\startGame;
 
 const PROGRESSION_LENGTH = 10;
-const GAME_RULE = 'What number is missing in the progression?' . PHP_EOL;
+const GAME_RULE = 'What number is missing in the progression?';
 
 function start(): ?callable
 {

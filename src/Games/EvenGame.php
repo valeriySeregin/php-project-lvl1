@@ -4,7 +4,7 @@ namespace BrainGames\Games\EvenGame;
 
 use function BrainGames\Engine\startGame;
 
-const GAME_RULE = 'Answer \'yes\' if given number is even and \'no\' otherwise' . PHP_EOL;
+const GAME_RULE = 'Answer \'yes\' if given number is even and \'no\' otherwise';
 
 function start(): ?callable
 {
