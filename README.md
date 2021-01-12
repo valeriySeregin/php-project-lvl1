@@ -6,11 +6,11 @@
 [![Main workflow](https://github.com/valeriySeregin/php-project-lvl1/workflows/PHP%20CI/badge.svg)](https://github.com/valeriySeregin/php-project-lvl1/actions)
 
 
-#brain-even
+# brain-even
 [![asciicast](https://asciinema.org/a/BFTKp6foQqyWcABxEyshyDm1D.svg)](https://asciinema.org/a/BFTKp6foQqyWcABxEyshyDm1D)
 
-#brain-calc
+# brain-calc
 [![asciicast](https://asciinema.org/a/XNTbknjT6P1BabvXgZFLm4W4X.svg)](https://asciinema.org/a/XNTbknjT6P1BabvXgZFLm4W4X)
 
-#brain-gcd
+# brain-gcd
 [![asciicast](https://asciinema.org/a/WPd6biB10n2HsSY4rFw5QY9WT.svg)](https://asciinema.org/a/WPd6biB10n2HsSY4rFw5QY9WT)
