@@ -6,12 +6,12 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'Answer \'yes\' if given number is prime. Otherwise answer \'no\'' . PHP_EOL;
 
-function start()
+function start(): callable
 {
     return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
 
-function isPrime($num)
+function isPrime(int $num): bool
 {
     if ($num === 1) {
         return false;
@@ -28,10 +28,10 @@ function isPrime($num)
     return true;
 }
 
-function generateQuestionAndAnswer()
+function generateQuestionAndAnswer(): array
 {
     $question = rand(1, 99);
     $answer = isPrime($question) ? 'yes' : 'no';
 
-    return [$question, (string) $answer];
+    return [$question, $answer];
 }

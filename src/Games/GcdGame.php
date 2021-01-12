@@ -6,17 +6,17 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'Find the greates common divisor of given numbers' . PHP_EOL;
 
-function start()
+function start(): callable
 {
     return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
 
-function calculateGcd($firstNum, $secondNum)
+function calculateGcd(int $firstNum, int $secondNum): mixed
 {
     return $firstNum % $secondNum === 0 ? $secondNum : calculateGcd($secondNum, $firstNum % $secondNum);
 }
 
-function generateQuestionAndAnswer()
+function generateQuestionAndAnswer(): array
 {
     $firstNumber = rand(1, 100);
     $secondNumber = rand(1, 100);

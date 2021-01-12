@@ -6,19 +6,19 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'What is the result of the expression?' . PHP_EOL;
 
-function start()
+function start(): callable
 {
     return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
 
-function getRandomOperator()
+function getRandomOperator(): string
 {
     $operators = ['+', '-', '*'];
 
     return $operators[rand(0, 2)];
 }
 
-function calculateExpressionResult($firstOperand, $operator, $secondOperand)
+function calculateExpressionResult(int $firstOperand, string $operator, int $secondOperand): int
 {
     switch ($operator) {
         case '+':
@@ -32,7 +32,7 @@ function calculateExpressionResult($firstOperand, $operator, $secondOperand)
     }
 }
 
-function generateQuestionAndAnswer()
+function generateQuestionAndAnswer(): array
 {
     $firstOperand = rand(0, 10);
     $secondOperand = rand(0, 10);

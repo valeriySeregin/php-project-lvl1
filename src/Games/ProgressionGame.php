@@ -7,12 +7,12 @@ use function BrainGames\Engine\startGame;
 const PROGRESSION_LENGTH = 10;
 const GAME_RULE = 'What number is missing in the progression?' . PHP_EOL;
 
-function start()
+function start(): callable
 {
     return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
 
-function generateQuestionAndAnswer()
+function generateQuestionAndAnswer(): array
 {
     $step = rand(1, 10);
     $indexToMiss = rand(0, PROGRESSION_LENGTH - 1);

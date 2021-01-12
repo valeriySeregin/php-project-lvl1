@@ -6,17 +6,17 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'Answer \'yes\' if given number is even and \'no\' otherwise' . PHP_EOL;
 
-function start()
+function start(): callable
 {
     return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
 
-function isEven($num)
+function isEven(int $num): bool
 {
     return $num % 2 === 0;
 }
 
-function generateQuestionAndAnswer()
+function generateQuestionAndAnswer(): array
 {
     $question = rand(0, 1000);
     $answer = isEven($question) ? 'yes' : 'no';
