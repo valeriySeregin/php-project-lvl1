@@ -6,7 +6,7 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'Find the greates common divisor of given numbers' . PHP_EOL;
 
-function start(): callable
+function start(): ?callable
 {
     return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }

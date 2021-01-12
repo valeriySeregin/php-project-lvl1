@@ -7,7 +7,7 @@ use function BrainGames\Engine\startGame;
 const PROGRESSION_LENGTH = 10;
 const GAME_RULE = 'What number is missing in the progression?' . PHP_EOL;
 
-function start(): callable
+function start(): ?callable
 {
     return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }

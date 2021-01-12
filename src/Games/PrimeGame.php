@@ -6,7 +6,7 @@ use function BrainGames\Engine\startGame;
 
 const GAME_RULE = 'Answer \'yes\' if given number is prime. Otherwise answer \'no\'' . PHP_EOL;
 
-function start(): callable
+function start(): ?callable
 {
     return startGame(GAME_RULE, fn() => generateQuestionAndAnswer());
 }
